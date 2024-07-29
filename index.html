@@ -1,50 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Calculator  By  Khushi Sharma</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="calculator">
-        <input type="text" id="inputBox" placeholder="0" />
-        <div>
-          <button class="button operator">AC</button>
-          <button class="button operator">DEL</button>
-          <button class="button operator">%</button>
-          <button class="button operator">/</button>
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="calculator.css">
+    </head>
+    <body>
+        <div class="calc">
+            <div>
+                <input type="text" class="sec" id="full">
+            </div>
+            <div id="ans">
+                <input type="text" class="main" id="disp">
+            </div>
+            <div class="btns">
+                <button class="ext btn" id="ac">AC</button>
+                <button class="ext btn" id="neg">+/-</button>
+                <button class="ext btn" id="per">%</button>
+                <button class="opp btn" id="dv">/</button>
+                <button class="num btn" id="seven">7</button>
+                <button class="num btn" id="eight">8</button>
+                <button class="num btn" id="nine">9</button>
+                <button class="opp btn" id="mul">*</button>
+                <button class="num btn" id="four">4</button>
+                <button class="num btn" id="five">5</button>
+                <button class="num btn" id="six">6</button>
+                <button class="opp btn" id="min">-</button>
+                <button class="num btn" id="one">1</button>
+                <button class="num btn" id="two">2</button>
+                <button class="num btn" id="three">3</button>
+                <button class="opp btn" id="add">+</button>
+                <button class="num btn" id="zero">0</button>
+                <button class="num btn" id="dec">.</button>
+                <button class="opp btn" id="eq">=</button>
+            </div>
         </div>
-        <div>
-          <button class="button">7</button>
-          <button class="button">8</button>
-          <button class="button">9</button>
-          <button class="button operator">*</button>
-        </div>
-        <div>
-          <button class="button">4</button>
-          <button class="button">5</button>
-          <button class="button">6</button>
-          <button class="button operator">-</button>
-        </div>
-        <div>
-          <button class="button">1</button>
-          <button class="button">2</button>
-          <button class="button">3</button>
-          <button class="button operator">+</button>
-        </div>
-
-        <div>
-          <button class="button">00</button>
-          <button class="button">0</button>
-          <button class="button">.</button>
-          <button class="button equalBtn">=</button>
-        </div>
-      </div>
-    </div>
-
-    <script src="script.js"></script>
-  </body>
+    </body>
+    <script src="calculator.js"></script>
 </html>
